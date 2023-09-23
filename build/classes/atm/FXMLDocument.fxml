@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="500.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="atm.FXMLDocumentController">
+    <children>
+        <Label fx:id="isConnected" alignment="CENTER" layoutX="6.0" layoutY="14.0" minHeight="16" minWidth="69" prefHeight="49.0" prefWidth="487.0" text="Status" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="87.0" prefHeight="31.0" prefWidth="90.0" text="Username" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="157.0" prefHeight="31.0" prefWidth="90.0" text="Password" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="82.0" layoutY="221.0" onAction="#Login" prefHeight="49.0" prefWidth="133.0" style="-fx-background-color: #2196F3;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="313.0" layoutY="221.0" onAction="#sginUp" prefHeight="49.0" prefWidth="133.0" style="-fx-background-color: #2196F3;" text="Sgin up" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtUser" alignment="BASELINE_RIGHT" focusColor="#57cfda" layoutX="171.0" layoutY="78.0" maxWidth="224.0" minWidth="224.0" prefHeight="49.0" prefWidth="224.0" promptText="Username" style="-fx-background-color: #FAFAFA;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="txtPass" alignment="CENTER" focusColor="#5edcff" layoutX="171.0" layoutY="139.0" maxWidth="224.0" minWidth="224.0" prefHeight="49.0" prefWidth="224.0" promptText="Password" style="-fx-background-color: #FAFAFA;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXPasswordField>
+    </children>
+</AnchorPane>

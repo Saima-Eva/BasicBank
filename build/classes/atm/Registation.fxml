@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="416.0" style="-fx-background-color: #EDEDED;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="atm.RegistationController">
+   <children>
+      <Pane layoutX="8.0" layoutY="6.0" prefHeight="400.0" prefWidth="416.0" style="-fx-background-color: #FFFFFF;">
+         <effect>
+            <DropShadow color="#00000096" />
+         </effect>
+         <children>
+            <JFXTextField fx:id="name1" focusColor="#27eef5" layoutX="143.0" layoutY="39.0" maxWidth="214.0" minWidth="214.0" prefHeight="48.0" prefWidth="214.0" promptText="Name" style="-fx-background-color: #FAFAFA;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="username1" focusColor="#27eef5" layoutX="143.0" layoutY="99.0" maxWidth="214.0" minWidth="214.0" prefHeight="48.0" prefWidth="214.0" promptText="Username" style="-fx-background-color: #FAFAFA;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="amount1" focusColor="#27eef5" layoutX="143.0" layoutY="222.0" maxWidth="214.0" minWidth="214.0" prefHeight="48.0" prefWidth="214.0" promptText="Start Deposite Amount" style="-fx-background-color: #FAFAFA;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="password1" focusColor="#27eef5" layoutX="143.0" layoutY="165.0" maxWidth="214.0" minWidth="214.0" prefHeight="48.0" prefWidth="214.0" promptText="Password" style="-fx-background-color: #FAFAFA;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton buttonType="RAISED" layoutX="174.0" layoutY="302.0" onAction="#sginUpReg" prefHeight="48.0" prefWidth="152.0" style="-fx-background-color: #2196F3;" text="Sign up" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="21.0" />
+               </font>
+            </JFXButton>
+            <Label contentDisplay="CENTER" layoutX="29.0" layoutY="47.0" prefHeight="33.0" prefWidth="97.0" text="Name" textFill="#317cee">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="CENTER" layoutX="29.0" layoutY="107.0" prefHeight="33.0" prefWidth="97.0" text="Username" textFill="#317cee">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="CENTER" layoutX="29.0" layoutY="173.0" prefHeight="33.0" prefWidth="97.0" text="Password" textFill="#317cee">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="CENTER" layoutX="29.0" layoutY="230.0" prefHeight="33.0" prefWidth="97.0" text="Amount" textFill="#317cee">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

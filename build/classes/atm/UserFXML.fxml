@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="atm.UserFXMLController">
+   <top>
+      <Label fx:id="userLb" alignment="CENTER" prefHeight="61.0" prefWidth="163.0" text="User WelCome" textAlignment="CENTER" textFill="#4581ff" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+   </top>
+   <left>
+      <AnchorPane prefHeight="314.0" prefWidth="201.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton buttonType="RAISED" contentDisplay="CENTER" layoutX="33.0" layoutY="24.0" onAction="#Deposite" prefHeight="55.0" prefWidth="135.0" style="-fx-background-color: #2196F3;" text="DEPOSITE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="33.0" layoutY="112.0" onAction="#Withdraw" prefHeight="55.0" prefWidth="135.0" style="-fx-background-color: #2196F3;" text="WITHDRAW" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="33.0" layoutY="202.0" onAction="#Balance" prefHeight="55.0" prefWidth="135.0" style="-fx-background-color: #2196F3;" text="BALANCE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane fx:id="a" prefHeight="243.0" prefWidth="334.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="baLabel" alignment="CENTER" layoutX="14.0" layoutY="236.0" prefHeight="110.0" prefWidth="372.0" text="Your Balance is $10" textFill="#3597f0" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Separator layoutY="-36.0" orientation="VERTICAL" prefHeight="422.0" prefWidth="18.0" />
+            <JFXTextField fx:id="txtBal" focusColor="#42cdfc" labelFloat="true" layoutX="86.0" layoutY="150.0" maxWidth="252.0" minWidth="236.0" prefHeight="51.0" prefWidth="236.0" promptText="ENTER YOUR AMOUNT" style="-fx-border-color: #2196F3; -fx-border-width: 3px;" unFocusColor="#4096ff">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" onAction="#SginOut" prefHeight="46.0" prefWidth="138.0" style="-fx-background-color: #2196F3;" text="Sgin Out" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+   </bottom>
+</BorderPane>
